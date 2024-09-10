@@ -1,7 +1,8 @@
 # Ethereum's Proof of Stake consensus explained
 
 ## Transcript
-Gaspar is the consensus method Ethereum will be switching to when it moves from proof of work to proof of stake.
+
+Gaspar is the consensus method Ethereum will be switching to when it moves from Proof-of-Work to Proof-of-Stake.
 
 It is actually the combination of two different consensus methods called LMD-GHOST and Casper FFG.
 
@@ -11,17 +12,17 @@ Firstly, what is stake and how exactly do you prove it?
 
 Stake is the number of tokens you own in the network or your stake in the network.
 
-Tokens are scarce resources that are difficult to replicate similar to how a proof-of-work cache is a difficult resource to replicate.
+Tokens are scarce resources that are difficult to replicate similar to how a Proof-of-Work cache is a difficult resource to replicate.
 
 To prove your stake with Ethereum there is a smart contract that keeps track of all the validators who are staking.
 
-You have to send 32 ETH along with your validator's public address and a withdrawal address to the smart contract.
+You have to send 32 ETH along with your validator's public address **and a withdrawal address** to the smart contract.
 
-Now whenever you sign something using the private key of your validator other people can check in the smart contract for your address and verify you are staking with 32 ETH.
+Now **whenever you sign something** using the private key of your validator other people can check in the smart contract for your address and verify you are staking with 32 ETH.
 
-Your validator's digital signature becomes your proof of stake.
+Your validator's digital signature becomes your Proof-of-Stake.
 
-The reason you actually have to lock up your stake on Ethereum unlike many other proof-of-stake protocols is to have slashing.
+The reason you actually have to lock up your stake on Ethereum unlike many other Proof-of-Stake protocols is to have slashing.
 
 Slashing is when some of the validated stake will be burned if they are found misbehaving.
 
@@ -35,9 +36,9 @@ The two main families of consensus methods used with cryptocurrencies are the lo
 
 Ethereum has two consensus methods and uses both types.
 
-First for the default consensus method called GHOST they have used a variation of the longest chain model with consensus methods being essentially voting models.
+First for the **default** consensus method **called GHOST** they have used a variation of the longest chain model.
 
-When you use the longest chain model, every block added to the blockchain is essentially a vote for the branch of the fork you want to win.
+With consensus methods being essentially voting models, when you use the longest chain model, every block added to the blockchain is essentially a vote for the branch of the fork you want to win.
 
 However, using the traditional longest chain model, you sometimes come into cases where a validator's vote isn't counted.
 
@@ -47,7 +48,7 @@ One side of the fork is two blocks long, and the other side has three blocks add
 
 If we use the normal longest chain rule, then the top branch would become the winner as it is the longest chain.
 
-However, is this actually what we want?
+However, **is that actually** what we want?
 
 The top branch only had two validators to vote for it, whereas three validators voted for the bottom branch.
 
@@ -137,7 +138,7 @@ Seeing as validators attest every epoch but are rarely chosen to propose a block
 
 The attestation rewards will vary on if they are on time and if they are voting the same as everyone else.
 
-When Ethereum switches to proof of stake, the issuance rate and rewards will become variable and depend on the amount of ETH being staked.
+When Ethereum switches to Proof-of-Stake, the issuance rate and rewards will become variable and depend on the amount of ETH being staked.
 
 They are likely to be between 0.54% and 0.94% per year.
 
@@ -181,7 +182,7 @@ It can go on running using GHOST and still have good probabilistic finality.
 
 So Ethereum won't go down and freeze if a third of the validators go offline like most protocols using a purely BFT-based consensus model.
 
-When using proof of stake, there's a well-known attack called a long-range attack.
+When using Proof-of-Stake, there's a well-known attack called a long-range attack.
 
 Essentially, an attacker will stake a large amount for a period of time and then stop staking.
 
@@ -215,7 +216,7 @@ If this isn't achieved, the chain will keep running with probabilistic finality.
 
 Then there should be validators that get slashed until finality can be achieved again.
 
-Though this is the general idea behind consensus on Ethereum, most proof-of-stake protocols have an honest majority assumption.
+Though this is the general idea behind consensus on Ethereum, most Proof-of-Stake protocols have an honest majority assumption.
 
 As long as more than 51% of the stake is completely honest, then the protocol is meant to be secure.
 
@@ -229,13 +230,20 @@ Ethereum has tried to take these attacks into account, which is why it has imple
 
 Slashing brings a huge cost to any dishonest validator, which massively discourages this behavior.
 
-This arguably makes it the most secure proof-of-stake based consensus method currently because it is trying to protect against attacks that other proof-of-stake based protocols don't even look at.
+This arguably makes it the most secure Proof-of-Stake based consensus method currently because it is trying to protect against attacks that other Proof-of-Stake based protocols don't even look at.
 
 To summarize, Ethereum managed to combine both the longest chain wins and BFT-based consensus model into one, allowing for very robust protocol due to using the longest chain and being able to have finality due to the BFT-based consensus running on top of it.
 
-Whilst it is very complex, which can increase the chance of bugs and has given up on some speed compared to full BFT-based consensus methods, it's still very fast to our longest chain wins model and has aimed for security and decentralization to build an extremely secure proof-of-stake based consensus method.
+Whilst it is very complex, which can increase the chance of bugs and has given up on some speed compared to full BFT-based consensus methods, it's still very fast to our longest chain wins model and has aimed for security and decentralization to build an extremely secure Proof-of-Stake based consensus method.
 
 If you enjoyed the video, please leave a like and subscribe if you want to catch my future content.
+
+### 
+
+> However, **is that actually** what we want?
+
+I hear like "However, is it such what we want?" but I think it is weird in terms of grammar.
+
 
 ## Translated Transcript
 
