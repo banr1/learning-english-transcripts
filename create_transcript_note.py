@@ -38,6 +38,7 @@ def create_markdown_file(video_title: str, transcript: str):
     
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(f"# {video_title}\n\n")
+        f.write("## Transcript\n\n")
         f.write(transcript)
     
     print(f"Markdown file '{filename}' has been created.")
